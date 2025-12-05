@@ -51,21 +51,21 @@ $$\tau < \frac{\rho \cdot c \cdot h^2}{2 \cdot \lambda}$$
   - `temp.m` — реализация метода конечных разностей в GNU Octave;
 
 - **c_pthreads/**
-  - `sor_pthreads_adaptive_omega.c` — SOR с использованием POSIX threads (pthreads);
+  - `temp_calc.c` — МКР с использованием POSIX threads (pthreads);
   - `Makefile` — сборка (`make`) и запуск (`make run`, параметры `THREADS`, `GRID` задаются в Makefile или через командную строку).
 
 - **c_mpi/**
-  - `sor_mpi_adaptive_omega.c` — распределённая реализация SOR с использованием MPI (C);
+  - `temp_calc_mpi.c` — МКР с использованием MPI (C);
   - `Makefile` — сборка (`mpicc`) и локальный запуск (`make run`, параметры `PROCS`, `GRID`);
-  - `run_112.slurm` — пример SLURM-скрипта для запуска на кластере (112 MPI-процессов).
+  - `job1.sh` — пример SLURM-скрипта для запуска на кластере (112 MPI-процессов).
 
 - **py_mpi/**
-  - `sor_mpi_adaptive_omega.py` — аналогичная MPI-реализация на Python с использованием `mpi4py` и `numpy`;
+  - `temp_calc.py` — МКР реализация на Python с использованием `mpi4py` и `numpy`;
   - `Makefile` — запуск через `mpirun` (`make run`, параметры `PROCS`, `GRID`);
-  - `run_112.slurm` — пример SLURM-скрипта для Python/MPI-версии.
+  - `job2.sh` — пример SLURM-скрипта для Python/MPI-версии.
  
 - **c_openmp/**
-  - `sor_OpenMP_adaptive_omega.c` — SOR с красно-чёрной схемой и адаптивным $\omega$, параллелизация с помощью OpenMP;
+  - `sor_OpenMP_adaptive_omega.c` — МКР с помощью OpenMP;
   - `Makefile` — сборка (`make`) и запуск (`make run` с параметрами `THREADS` и `GRID`).
 
 
