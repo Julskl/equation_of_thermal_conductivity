@@ -96,21 +96,17 @@ $$\tau < \frac{\rho \cdot c \cdot h^2}{2 \cdot \lambda}$$
 
 - **c_pthreads/**
   - `temp_calc.c` — МКР с использованием POSIX threads (pthreads);
-  - `Makefile` — сборка (`make`) и запуск (`make run`, параметры `THREADS`, `GRID` задаются в Makefile или через командную строку).
 
 - **c_mpi/**
   - `temp_calc_mpi.c` — МКР с использованием MPI (C);
-  - `Makefile` — сборка (`mpicc`) и локальный запуск (`make run`, параметры `PROCS`, `GRID`);
   - `job1.sh` — пример SLURM-скрипта для запуска на кластере (112 MPI-процессов).
 
 - **py_mpi/**
   - `temp_calc.py` — МКР реализация на Python с использованием `mpi4py` и `numpy`;
-  - `Makefile` — запуск через `mpirun` (`make run`, параметры `PROCS`, `GRID`);
   - `job2.sh` — пример SLURM-скрипта для Python/MPI-версии.
  
 - **c_openmp/**
   - `sor_OpenMP_adaptive_omega.c` — МКР с помощью OpenMP;
-  - `Makefile` — сборка (`make`) и запуск (`make run` с параметрами `THREADS` и `GRID`).
 
 
 
