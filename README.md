@@ -106,7 +106,7 @@ $$\tau < \frac{\rho \cdot c \cdot h^2}{2 \cdot \lambda}$$
   - `job2.sh` — пример SLURM-скрипта для Python/MPI-версии.
  
 - **c_openmp/**
-  - `sor_OpenMP_adaptive_omega.c` — МКР с помощью OpenMP;
+  - `openMP.c` — МКР с помощью OpenMP;
 
 
 
